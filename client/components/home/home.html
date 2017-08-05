@@ -1,0 +1,23 @@
+<md-content>
+    <h1>Welcome to the Angular App connecting to Sync Gatway with PouchDB</h1>
+    <h3>Login above from the Toolbar to access your profile</h3>
+
+    <md-button ng-click="home.public()" >
+        Call Public API
+    </md-button>
+
+    <md-button ng-click="home.private()" ng-if="toolbar.auth.isAuthenticated">
+        Call Private API
+    </md-button>
+
+    <md-button ng-click="home.pouchdbConnect()" ng-if="toolbar.auth.isAuthenticated">
+        Connect PouchDB to SG
+    </md-button>
+
+    <h1>{{home.message}}</h1>
+
+    <div ng-if="toolbar.auth.isAuthenticated">
+    <h3>PouchDB Sync Log</h3>
+    <div ng-bind-html="home.pouchdb_log"></div>
+    </div>
+</md-content>

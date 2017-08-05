@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="authApp">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css"/>
+
+        <script src="//cdn.auth0.com/js/lock-9.0.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <toolbar></toolbar>
+
+        <div layout-padding>
+            <ui-view></ui-view>
+        </div>
+
+        <script src="node_modules/angular/angular.js"></script>
+        <script src="node_modules/angular-animate/angular-animate.js"></script>
+        <script src="node_modules/angular-aria/angular-aria.js"></script>
+        <script src="node_modules/angular-sanitize/angular-sanitize.js"></script>
+        <script src="node_modules/angular-material/angular-material.js"></script>
+        <script src="node_modules/angular-jwt/dist/angular-jwt.js"></script>
+        <script src="node_modules/angular-storage/dist/angular-storage.js"></script>
+        <script src="node_modules/auth0-angular/build/auth0-angular.js"></script>
+        <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+
+        <script src="client/app.js"></script>
+
+        <script src="client/components/toolbar/toolbar.dir.js"></script>        
+        <script src="client/components/home/home.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pouchdb/6.3.4/pouchdb.js"></script>
+        <script src="client/lib/angular-pouchdb/angular-pouchdb.js"></script>
+    </body>
+</html>

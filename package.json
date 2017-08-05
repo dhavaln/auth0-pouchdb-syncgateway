@@ -1,0 +1,35 @@
+{
+  "name": "angular-auth0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm-run-all --parallel server api",
+    "server": "node server.js",
+    "api": "node api.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.5",
+    "angular-animate": "^1.6.5",
+    "angular-aria": "^1.6.5",
+    "angular-jwt": "^0.1.9",
+    "angular-material": "^1.1.4",
+    "angular-messages": "^1.6.5",
+    "angular-sanitize": "^1.6.5",
+    "angular-storage": "0.0.15",
+    "angular-ui-router": "^1.0.3",
+    "auth0-angular": "^4.2.7",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "express": "^4.14.0",
+    "express-jwt": "^5.1.0",
+    "express-jwt-authz": "^1.0.0",
+    "jwks-rsa": "^1.1.1",
+    "npm-run-all": "^4.0.0",
+    "uuid": "^3.1.0"
+  }
+}
