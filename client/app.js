@@ -8,8 +8,8 @@ angular
 .config(function($provide, authProvider, $urlRouterProvider, $stateProvider, $httpProvider, jwtInterceptorProvider, jwtOptionsProvider){
     
     authProvider.init({
-        domain: 'igotthis.auth0.com',
-        clientID: '6OEjEVmlLz3iGTAVYFTRp5yzoX3g5pqM'
+        domain: 'client.auth0.com',
+        clientID: 'XXX'
     });
 
     $urlRouterProvider.otherwise('/home');
